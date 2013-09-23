@@ -15,12 +15,12 @@ namespace CUITAdmin
         public NewAccountForm()
         {
             InitializeComponent();
-            this.SetBounds(350, 350, 650, 400);
+            this.SetBounds(350, 350, 680, 400);
         }
 
         private void NewAccountForm_Load(object sender, EventArgs e)
         {
-            NewAccount x = new NewAccount(this);
+            NewAccount addAccountForm = new NewAccount(this);
         }
 
         private void AddNew(int index)
@@ -34,12 +34,17 @@ namespace CUITAdmin
         private int controlGroupSizeY = 400;
         private int controlGroupIndex = 0;
 
-        public NewAccount(Form passForm)
+        public NewAccount(Form passForm, int controlGroupIndex)
         {
             Panel formContainer = new Panel();
             formContainer.Location = new Point(10, 10 + controlGroupIndex * controlGroupSizeY);
             formContainer.Size = new Size(650, 400);
             passForm.Controls.Add(formContainer);
+
+            Label lblTestingShit = new Label();
+            lblTestingShit.Text = "Chris can you see this?";
+            lblTestingShit.Location = new Point(50, 300);
+            formContainer.Controls.Add(lblTestingShit);
 
             Label lblAccountName = new Label();
             lblAccountName.Text = "Account Name:";
@@ -47,7 +52,6 @@ namespace CUITAdmin
             formContainer.Controls.Add(lblAccountName);
 
             TextBox txtAccountName = new TextBox();
-            //txtAccountName.Location = new Point(110, 10);
             txtAccountName.SetBounds(110, 10, 190, 20);
             formContainer.Controls.Add(txtAccountName);
 
@@ -63,7 +67,7 @@ namespace CUITAdmin
             formContainer.Controls.Add(testLabel);
 
             TextBox txtAccountNumber = new TextBox();
-            txtAccountNumber.Location = new Point(110, 40);
+            txtAccountNumber.SetBounds(110, 40, 190, 20);
             formContainer.Controls.Add(txtAccountNumber);
 
             Label lblMaxCharge = new Label();
@@ -72,7 +76,7 @@ namespace CUITAdmin
             formContainer.Controls.Add(lblMaxCharge);
 
             TextBox txtMaxCharge = new TextBox();
-            txtMaxCharge.Location = new Point(110, 70);
+            txtAccountName.SetBounds(110, 70, 190, 20);
             formContainer.Controls.Add(txtMaxCharge);
 
             Label lblAccountExpiration = new Label();
