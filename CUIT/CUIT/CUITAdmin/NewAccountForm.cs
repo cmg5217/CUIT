@@ -34,12 +34,17 @@ namespace CUITAdmin
         private int controlGroupSizeY = 400;
         private int controlGroupIndex = 0;
 
-        public NewAccount(Form passForm)
+        public NewAccount(Form passForm, int controlGroupIndex)
         {
             Panel formContainer = new Panel();
             formContainer.Location = new Point(10, 10 + controlGroupIndex * controlGroupSizeY);
             formContainer.Size = new Size(650, 400);
             passForm.Controls.Add(formContainer);
+
+            Label lblTestingShit = new Label();
+            lblTestingShit.Text = "Chris can you see this?";
+            lblTestingShit.Location = new Point(50, 300);
+            formContainer.Controls.Add(lblTestingShit);
 
             Label lblAccountName = new Label();
             lblAccountName.Text = "Account Name:";
@@ -69,7 +74,7 @@ namespace CUITAdmin
             formContainer.Controls.Add(txtMaxCharge);
 
             Label lblAccountExpiration = new Label();
-            lblAccountExpiration.Text = "Account This is different:";
+            lblAccountExpiration.Text = "Account Expiration:";
             lblAccountExpiration.Location = new Point(325, 10);
             formContainer.Controls.Add(lblAccountExpiration);
 
