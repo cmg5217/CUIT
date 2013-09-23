@@ -31,3 +31,6 @@ C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.
 C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.NewAccountForm.resources
 C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.Properties.Resources.resources
 C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.csproj.GenerateResource.Cache
+C:\Users\cmg52_000\411\CUIT\CUIT\CUITAdmin\bin\Debug\CUITAdmin.exe.config
+C:\Users\cmg52_000\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.exe
+C:\Users\cmg52_000\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.pdb

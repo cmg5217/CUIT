@@ -56,6 +56,12 @@ namespace CUITAdmin
             lblAccountNumber.Location = new Point(10, 40);
             formContainer.Controls.Add(lblAccountNumber);
 
+            //Comment by chris
+            Label testLabel = new Label();
+            testLabel.Text = "This is a test";
+            testLabel.Location = new Point(50, 50);
+            formContainer.Controls.Add(testLabel);
+
             TextBox txtAccountNumber = new TextBox();
             txtAccountNumber.Location = new Point(110, 40);
             formContainer.Controls.Add(txtAccountNumber);
