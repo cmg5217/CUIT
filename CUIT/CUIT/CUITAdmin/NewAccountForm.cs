@@ -20,7 +20,7 @@ namespace CUITAdmin
 
         private void NewAccountForm_Load(object sender, EventArgs e)
         {
-            NewAccount addAccountForm = new NewAccount(this);
+            NewAccount addAccountForm = new NewAccount(this, 0);
         }
 
         private void AddNew(int index)
@@ -32,7 +32,6 @@ namespace CUITAdmin
     public class NewAccount
     {
         private int controlGroupSizeY = 400;
-        private int controlGroupIndex = 0;
 
         public NewAccount(Form passForm, int controlGroupIndex)
         {
@@ -41,18 +40,13 @@ namespace CUITAdmin
             formContainer.Size = new Size(650, 400);
             passForm.Controls.Add(formContainer);
 
-            Label lblTestingShit = new Label();
-            lblTestingShit.Text = "Chris can you see this?";
-            lblTestingShit.Location = new Point(50, 300);
-            formContainer.Controls.Add(lblTestingShit);
-
             Label lblAccountName = new Label();
             lblAccountName.Text = "Account Name:";
             lblAccountName.Location = new Point(10, 10);
             formContainer.Controls.Add(lblAccountName);
 
             TextBox txtAccountName = new TextBox();
-            txtAccountName.SetBounds(110, 10, 190, 20);
+            txtAccountName.SetBounds(110, 10, 200, 20);
             formContainer.Controls.Add(txtAccountName);
 
             Label lblAccountNumber = new Label();
@@ -61,7 +55,7 @@ namespace CUITAdmin
             formContainer.Controls.Add(lblAccountNumber);
 
             TextBox txtAccountNumber = new TextBox();
-            txtAccountNumber.SetBounds(110, 40, 190, 20);
+            txtAccountNumber.SetBounds(110, 40, 200, 20);
             formContainer.Controls.Add(txtAccountNumber);
 
             Label lblMaxCharge = new Label();
@@ -70,17 +64,18 @@ namespace CUITAdmin
             formContainer.Controls.Add(lblMaxCharge);
 
             TextBox txtMaxCharge = new TextBox();
-            txtAccountName.SetBounds(110, 70, 190, 20);
+            txtMaxCharge.SetBounds(110, 70, 200, 20);
             formContainer.Controls.Add(txtMaxCharge);
 
             Label lblAccountExpiration = new Label();
             lblAccountExpiration.Text = "Account Expiration:";
-            lblAccountExpiration.Location = new Point(325, 10);
+            lblAccountExpiration.Location = new Point(10, 100);
             formContainer.Controls.Add(lblAccountExpiration);
 
+            //Not sure if we want a textbox or a datetimepicker yet
             //TextBox txtAccountExpiration = new TextBox();
             DateTimePicker dtpAccountExpiration = new DateTimePicker();
-            dtpAccountExpiration.Location = new Point(425, 10);
+            dtpAccountExpiration.Location = new Point(110, 100);
             formContainer.Controls.Add(dtpAccountExpiration);
 
             Label lblRateType = new Label();
@@ -89,7 +84,7 @@ namespace CUITAdmin
             formContainer.Controls.Add(lblRateType);
 
             TextBox txtRateType = new TextBox();
-            txtRateType.Location = new Point(110, 130);
+            txtRateType.SetBounds(110, 130, 200, 20);
             formContainer.Controls.Add(txtRateType);
 
             Label lblRate = new Label();
@@ -98,7 +93,7 @@ namespace CUITAdmin
             formContainer.Controls.Add(lblRate);
 
             TextBox txtRate = new TextBox();
-            txtRate.Location = new Point(110, 160);
+            txtRate.SetBounds(110, 160, 200, 20);
             formContainer.Controls.Add(txtRate);
 
             Label lblBalance = new Label();
@@ -107,16 +102,16 @@ namespace CUITAdmin
             formContainer.Controls.Add(lblBalance);
 
             TextBox txtBalance = new TextBox();
-            txtBalance.Location = new Point(110, 190);
+            txtBalance.SetBounds(110, 190, 200, 20);
             formContainer.Controls.Add(txtBalance);
 
             Label lblNotes = new Label();
             lblNotes.Text = "Notes:";
-            lblNotes.Location = new Point(10, 220);
+            lblNotes.Location = new Point(325, 10);
             formContainer.Controls.Add(lblNotes);
 
-            TextBox txtNotes = new TextBox();
-            txtNotes.Location = new Point(110, 220);
+            RichTextBox txtNotes = new RichTextBox();
+            txtNotes.SetBounds(325, 40, 280, 172);
             formContainer.Controls.Add(txtNotes);
         }
     }
