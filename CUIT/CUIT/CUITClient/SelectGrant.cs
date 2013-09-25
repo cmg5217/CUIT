@@ -132,8 +132,8 @@ namespace CUITAdmin
             ////
             
             
-            TimerWindow TimerWindow = new TimerWindow();
-            TimerWindow.Show();
+            //TimerWindow TimerWindow = new TimerWindow();
+            //TimerWindow.Show();
             this.Close();
         }
 

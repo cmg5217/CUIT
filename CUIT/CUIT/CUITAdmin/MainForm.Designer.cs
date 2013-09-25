@@ -52,16 +52,8 @@
             this.lblManualLogDuration = new System.Windows.Forms.Label();
             this.lblManualLogFunding = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvTimeLogRequests = new System.Windows.Forms.DataGridView();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.unapprovedTimeLogTableDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Aprroved = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unapprovedTimeLogTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cUIT_TRIALDataSet = new CUITAdmin.CUIT_TRIALDataSet();
             this.tbpAccountAdmin = new System.Windows.Forms.TabPage();
             this.btnAccountAdminNew = new System.Windows.Forms.Button();
             this.cboAccountAdminNew = new System.Windows.Forms.ComboBox();
@@ -73,22 +65,31 @@
             this.tbpExports = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.unapprovedTimeLogTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cUIT_TRIALDataSet = new CUITAdmin.CUIT_TRIALDataSet();
             this.time_LogBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.time_LogTableAdapter = new CUITAdmin.CUIT_TRIALDataSetTableAdapters.Time_LogTableAdapter();
             this.tableAdapterManager = new CUITAdmin.CUIT_TRIALDataSetTableAdapters.TableAdapterManager();
             this.unapprovedTimeLogTableTableAdapter = new CUITAdmin.CUIT_TRIALDataSetTableAdapters.UnapprovedTimeLogTableTableAdapter();
+            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmInstrument = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmFundingSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmApprove = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlMain.SuspendLayout();
             this.tbpBilling.SuspendLayout();
             this.grpManualEntries.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.grpManualTimeLog.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cUIT_TRIALDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTimeLogRequests)).BeginInit();
             this.tbpAccountAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tbpExports.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cUIT_TRIALDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_LogBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -307,14 +308,30 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgvTimeLogRequests);
             this.groupBox1.Controls.Add(this.btnSubmit);
-            this.groupBox1.Controls.Add(this.unapprovedTimeLogTableDataGridView);
             this.groupBox1.Location = new System.Drawing.Point(6, 232);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(652, 354);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Time Log Requests";
+            // 
+            // dgvTimeLogRequests
+            // 
+            this.dgvTimeLogRequests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTimeLogRequests.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmName,
+            this.clmInstrument,
+            this.clmDate,
+            this.clmTime,
+            this.clmDuration,
+            this.clmFundingSource,
+            this.clmApprove});
+            this.dgvTimeLogRequests.Location = new System.Drawing.Point(7, 20);
+            this.dgvTimeLogRequests.Name = "dgvTimeLogRequests";
+            this.dgvTimeLogRequests.Size = new System.Drawing.Size(639, 299);
+            this.dgvTimeLogRequests.TabIndex = 8;
             // 
             // btnSubmit
             // 
@@ -324,68 +341,6 @@
             this.btnSubmit.TabIndex = 7;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
-            // 
-            // unapprovedTimeLogTableDataGridView
-            // 
-            this.unapprovedTimeLogTableDataGridView.AutoGenerateColumns = false;
-            this.unapprovedTimeLogTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.unapprovedTimeLogTableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.Aprroved});
-            this.unapprovedTimeLogTableDataGridView.DataSource = this.unapprovedTimeLogTableBindingSource;
-            this.unapprovedTimeLogTableDataGridView.Location = new System.Drawing.Point(7, 19);
-            this.unapprovedTimeLogTableDataGridView.Name = "unapprovedTimeLogTableDataGridView";
-            this.unapprovedTimeLogTableDataGridView.Size = new System.Drawing.Size(639, 300);
-            this.unapprovedTimeLogTableDataGridView.TabIndex = 6;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Username";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Username";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "StartTime";
-            this.dataGridViewTextBoxColumn2.HeaderText = "StartTime";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Duration";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Duration";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Instrument";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Instrument";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "AccountName";
-            this.dataGridViewTextBoxColumn5.HeaderText = "AccountName";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // Aprroved
-            // 
-            this.Aprroved.HeaderText = "Approved";
-            this.Aprroved.Name = "Aprroved";
-            // 
-            // unapprovedTimeLogTableBindingSource
-            // 
-            this.unapprovedTimeLogTableBindingSource.DataMember = "UnapprovedTimeLogTable";
-            this.unapprovedTimeLogTableBindingSource.DataSource = this.cUIT_TRIALDataSet;
-            // 
-            // cUIT_TRIALDataSet
-            // 
-            this.cUIT_TRIALDataSet.DataSetName = "CUIT_TRIALDataSet";
-            this.cUIT_TRIALDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbpAccountAdmin
             // 
@@ -509,6 +464,16 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // unapprovedTimeLogTableBindingSource
+            // 
+            this.unapprovedTimeLogTableBindingSource.DataMember = "UnapprovedTimeLogTable";
+            this.unapprovedTimeLogTableBindingSource.DataSource = this.cUIT_TRIALDataSet;
+            // 
+            // cUIT_TRIALDataSet
+            // 
+            this.cUIT_TRIALDataSet.DataSetName = "CUIT_TRIALDataSet";
+            this.cUIT_TRIALDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // time_LogBindingSource
             // 
             this.time_LogBindingSource.DataMember = "Time_Log";
@@ -535,6 +500,44 @@
             // 
             this.unapprovedTimeLogTableTableAdapter.ClearBeforeFill = true;
             // 
+            // clmName
+            // 
+            this.clmName.HeaderText = "Name";
+            this.clmName.Name = "clmName";
+            // 
+            // clmInstrument
+            // 
+            this.clmInstrument.HeaderText = "Instrument";
+            this.clmInstrument.Name = "clmInstrument";
+            // 
+            // clmDate
+            // 
+            this.clmDate.HeaderText = "Log Date";
+            this.clmDate.Name = "clmDate";
+            // 
+            // clmTime
+            // 
+            this.clmTime.HeaderText = "Start Time";
+            this.clmTime.Name = "clmTime";
+            this.clmTime.Width = 75;
+            // 
+            // clmDuration
+            // 
+            this.clmDuration.HeaderText = "Duration";
+            this.clmDuration.Name = "clmDuration";
+            this.clmDuration.Width = 60;
+            // 
+            // clmFundingSource
+            // 
+            this.clmFundingSource.HeaderText = "Funding Source";
+            this.clmFundingSource.Name = "clmFundingSource";
+            // 
+            // clmApprove
+            // 
+            this.clmApprove.HeaderText = "Approve?";
+            this.clmApprove.Name = "clmApprove";
+            this.clmApprove.Width = 60;
+            // 
             // frmCUITAdminMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -552,13 +555,13 @@
             this.grpManualTimeLog.ResumeLayout(false);
             this.grpManualTimeLog.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cUIT_TRIALDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTimeLogRequests)).EndInit();
             this.tbpAccountAdmin.ResumeLayout(false);
             this.tbpAccountAdmin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tbpExports.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cUIT_TRIALDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_LogBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -583,13 +586,6 @@
         private System.Windows.Forms.BindingSource unapprovedTimeLogTableBindingSource;
         private CUIT_TRIALDataSetTableAdapters.UnapprovedTimeLogTableTableAdapter unapprovedTimeLogTableTableAdapter;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.DataGridView unapprovedTimeLogTableDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Aprroved;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox grpManualEntries;
         private System.Windows.Forms.Label lblManualLogUser;
@@ -614,6 +610,14 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvTimeLogRequests;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmInstrument;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmDuration;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmFundingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmApprove;
     }
 }
 

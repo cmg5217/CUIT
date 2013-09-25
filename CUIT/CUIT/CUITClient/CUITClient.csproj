@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,12 +69,6 @@
     <Compile Include="SelectGrant.Designer.cs">
       <DependentUpon>SelectGrant.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimerWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TimerWindow.Designer.cs">
-      <DependentUpon>TimerWindow.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,9 +84,6 @@
     </Compile>
     <EmbeddedResource Include="SelectGrant.resx">
       <DependentUpon>SelectGrant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TimerWindow.resx">
-      <DependentUpon>TimerWindow.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
