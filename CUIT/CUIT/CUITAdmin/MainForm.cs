@@ -27,13 +27,15 @@ namespace CUITAdmin
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'cUIT_TRIALDataSet.UnapprovedTimeLogTable' table. You can move, or remove it, as needed.
-            this.unapprovedTimeLogTableTableAdapter.FillDeniedTimeLog(this.cUIT_TRIALDataSet.UnapprovedTimeLogTable);
+            //this.unapprovedTimeLogTableTableAdapter.FillDeniedTimeLog(this.cUIT_TRIALDataSet.UnapprovedTimeLogTable);
             // TODO: This line of code loads data into the 'cUIT_TRIALDataSet.Time_Log' table. You can move, or remove it, as needed.
-            this.time_LogTableAdapter.Fill(this.cUIT_TRIALDataSet.Time_Log);
+            //this.time_LogTableAdapter.Fill(this.cUIT_TRIALDataSet.Time_Log);
 
             
-            cboAccountAdminNew.SelectedItem = "Instrument";
-
+            cboAccountAdminNew.SelectedItem = "Account";
+            cboAccountAdminView.SelectedItem = "Accounts";
+            DataGridViewCell editCell = dgvTimeLogRequests.Rows[0].Cells[6];
+            editCell.Value = "test";
 
         }
 
@@ -52,6 +54,7 @@ namespace CUITAdmin
             Form newAccount = new NewAccountForm();
             newAccount.Show();
         }
+
         /*
         private void TypeSwitch(){
             switch (cboType.SelectedItem.ToString())
@@ -65,5 +68,7 @@ namespace CUITAdmin
                     break;
             }*/
         }
+
+        
     }
 

@@ -63,6 +63,9 @@
     <Compile Include="NewAccountForm.Designer.cs">
       <DependentUpon>NewAccountForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewAccountPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
@@ -70,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewAccountForm.resx">
       <DependentUpon>NewAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccountPanel.resx">
+      <DependentUpon>NewAccountPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -39,7 +39,7 @@
             // btnlogin
             // 
             this.btnlogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnlogin.Location = new System.Drawing.Point(298, 297);
+            this.btnlogin.Location = new System.Drawing.Point(303, 282);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(233, 225);
+            this.lblUser.Location = new System.Drawing.Point(259, 233);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(58, 13);
             this.lblUser.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(235, 256);
+            this.lblPassword.Location = new System.Drawing.Point(261, 259);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(56, 13);
             this.lblPassword.TabIndex = 2;
@@ -70,7 +70,7 @@
             // txtUser
             // 
             this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUser.Location = new System.Drawing.Point(298, 225);
+            this.txtUser.Location = new System.Drawing.Point(323, 230);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 20);
             this.txtUser.TabIndex = 4;
@@ -78,7 +78,7 @@
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassword.Location = new System.Drawing.Point(298, 256);
+            this.txtPassword.Location = new System.Drawing.Point(323, 256);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(100, 20);

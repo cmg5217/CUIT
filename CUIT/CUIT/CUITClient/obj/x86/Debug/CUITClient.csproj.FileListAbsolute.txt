@@ -1,0 +1,11 @@
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITAdmin.LoginScreen.resources
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITAdmin.Properties.Resources.resources
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITAdmin.SelectGrant.resources
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\BarnsApp.exe
+E:\411\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.exe.config
+E:\411\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.exe
+E:\411\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.pdb
+E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\BarnsApp.pdb

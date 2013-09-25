@@ -34,3 +34,16 @@ C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.
 C:\Users\cmg52_000\411\CUIT\CUIT\CUITAdmin\bin\Debug\CUITAdmin.exe.config
 C:\Users\cmg52_000\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.exe
 C:\Users\cmg52_000\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.pdb
+E:\411\CUIT\CUIT\CUITAdmin\bin\Debug\CUITAdmin.exe.config
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.exe
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.pdb
+E:\411\CUIT\CUIT\CUITAdmin\bin\Debug\CUITAdmin.exe
+E:\411\CUIT\CUIT\CUITAdmin\bin\Debug\CUITAdmin.pdb
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.frmCUITAdminMain.resources
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.NewAccountForm.resources
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.Properties.Resources.resources
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\411\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.NewAccountPanel.resources
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITAdmin\obj\x86\Debug\CUITAdmin.NewAccountPanel.resources
