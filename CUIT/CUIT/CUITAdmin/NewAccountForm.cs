@@ -21,19 +21,14 @@ namespace CUITAdmin
 
         private void NewAccountForm_Load(object sender, EventArgs e)
         {
-
-            //NewAccount x = new NewAccount(this);
-            NewAccountPanel myAcctForm = new NewAccountPanel(this);//, 0);
-            //myAcctForm.Location = new Point(10, 10 + controlGroupIndex * controlGroupSizeY);
-            //myAcctForm.Size = new Size(650, 400);
-
-            //NewAccount addAccountForm = new NewAccount(this, 0);
+            NewAccountPanel myAcctForm = new NewAccountPanel(this, 0);
         }
 
 
-        private void AddNew(int index)
+        public void AddNew(int index)
         {
-
+            NewAccountPanel newAcctForm = new NewAccountPanel(this, index);
+            newAcctForm.Show();
         }
     }
 }

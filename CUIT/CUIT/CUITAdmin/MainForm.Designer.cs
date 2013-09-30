@@ -53,6 +53,13 @@
             this.lblManualLogFunding = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvTimeLogRequests = new System.Windows.Forms.DataGridView();
+            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmInstrument = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmFundingSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmApprove = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.tbpAccountAdmin = new System.Windows.Forms.TabPage();
             this.btnAccountAdminNew = new System.Windows.Forms.Button();
@@ -63,21 +70,19 @@
             this.txtAccountAdminSearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbpExports = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.unapprovedTimeLogTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cUIT_TRIALDataSet = new CUITAdmin.CUIT_TRIALDataSet();
             this.time_LogBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.time_LogTableAdapter = new CUITAdmin.CUIT_TRIALDataSetTableAdapters.Time_LogTableAdapter();
             this.tableAdapterManager = new CUITAdmin.CUIT_TRIALDataSetTableAdapters.TableAdapterManager();
             this.unapprovedTimeLogTableTableAdapter = new CUITAdmin.CUIT_TRIALDataSetTableAdapters.UnapprovedTimeLogTableTableAdapter();
-            this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmInstrument = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmFundingSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmApprove = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tbpBilling.SuspendLayout();
             this.grpManualEntries.SuspendLayout();
@@ -91,6 +96,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cUIT_TRIALDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_LogBindingSource)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -333,6 +340,44 @@
             this.dgvTimeLogRequests.Size = new System.Drawing.Size(639, 299);
             this.dgvTimeLogRequests.TabIndex = 8;
             // 
+            // clmName
+            // 
+            this.clmName.HeaderText = "Name";
+            this.clmName.Name = "clmName";
+            // 
+            // clmInstrument
+            // 
+            this.clmInstrument.HeaderText = "Instrument";
+            this.clmInstrument.Name = "clmInstrument";
+            // 
+            // clmDate
+            // 
+            this.clmDate.HeaderText = "Log Date";
+            this.clmDate.Name = "clmDate";
+            // 
+            // clmTime
+            // 
+            this.clmTime.HeaderText = "Start Time";
+            this.clmTime.Name = "clmTime";
+            this.clmTime.Width = 75;
+            // 
+            // clmDuration
+            // 
+            this.clmDuration.HeaderText = "Duration";
+            this.clmDuration.Name = "clmDuration";
+            this.clmDuration.Width = 60;
+            // 
+            // clmFundingSource
+            // 
+            this.clmFundingSource.HeaderText = "Funding Source";
+            this.clmFundingSource.Name = "clmFundingSource";
+            // 
+            // clmApprove
+            // 
+            this.clmApprove.HeaderText = "Approve?";
+            this.clmApprove.Name = "clmApprove";
+            this.clmApprove.Width = 60;
+            // 
             // btnSubmit
             // 
             this.btnSubmit.Location = new System.Drawing.Point(570, 325);
@@ -436,8 +481,8 @@
             // 
             // tbpExports
             // 
-            this.tbpExports.Controls.Add(this.button2);
-            this.tbpExports.Controls.Add(this.button1);
+            this.tbpExports.Controls.Add(this.groupBox4);
+            this.tbpExports.Controls.Add(this.groupBox3);
             this.tbpExports.Location = new System.Drawing.Point(4, 22);
             this.tbpExports.Name = "tbpExports";
             this.tbpExports.Padding = new System.Windows.Forms.Padding(3);
@@ -445,24 +490,7 @@
             this.tbpExports.TabIndex = 2;
             this.tbpExports.Text = "Exports";
             this.tbpExports.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(7, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(7, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tbpExports.Click += new System.EventHandler(this.tbpExports_Click);
             // 
             // unapprovedTimeLogTableBindingSource
             // 
@@ -500,43 +528,70 @@
             // 
             this.unapprovedTimeLogTableTableAdapter.ClearBeforeFill = true;
             // 
-            // clmName
+            // button1
             // 
-            this.clmName.HeaderText = "Name";
-            this.clmName.Name = "clmName";
+            this.button1.Location = new System.Drawing.Point(52, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Export User Data";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // clmInstrument
+            // button2
             // 
-            this.clmInstrument.HeaderText = "Instrument";
-            this.clmInstrument.Name = "clmInstrument";
+            this.button2.Location = new System.Drawing.Point(52, 59);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(103, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Import Logs";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // clmDate
+            // groupBox3
             // 
-            this.clmDate.HeaderText = "Log Date";
-            this.clmDate.Name = "clmDate";
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Location = new System.Drawing.Point(232, 260);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(216, 100);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Account Adminn";
             // 
-            // clmTime
+            // groupBox4
             // 
-            this.clmTime.HeaderText = "Start Time";
-            this.clmTime.Name = "clmTime";
-            this.clmTime.Width = 75;
+            this.groupBox4.Controls.Add(this.button3);
+            this.groupBox4.Controls.Add(this.dateTimePicker2);
+            this.groupBox4.Controls.Add(this.dateTimePicker1);
+            this.groupBox4.Location = new System.Drawing.Point(232, 135);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(216, 119);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Billing Export";
             // 
-            // clmDuration
+            // dateTimePicker1
             // 
-            this.clmDuration.HeaderText = "Duration";
-            this.clmDuration.Name = "clmDuration";
-            this.clmDuration.Width = 60;
+            this.dateTimePicker1.Location = new System.Drawing.Point(7, 20);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 0;
             // 
-            // clmFundingSource
+            // dateTimePicker2
             // 
-            this.clmFundingSource.HeaderText = "Funding Source";
-            this.clmFundingSource.Name = "clmFundingSource";
+            this.dateTimePicker2.Location = new System.Drawing.Point(7, 47);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 1;
             // 
-            // clmApprove
+            // button3
             // 
-            this.clmApprove.HeaderText = "Approve?";
-            this.clmApprove.Name = "clmApprove";
-            this.clmApprove.Width = 60;
+            this.button3.Location = new System.Drawing.Point(131, 74);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Export";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // frmCUITAdminMain
             // 
@@ -563,6 +618,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.unapprovedTimeLogTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cUIT_TRIALDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_LogBindingSource)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -608,8 +665,6 @@
         private System.Windows.Forms.ComboBox cboAccountAdminView;
         private System.Windows.Forms.TextBox txtAccountAdminSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvTimeLogRequests;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmInstrument;
@@ -618,6 +673,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmDuration;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmFundingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmApprove;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

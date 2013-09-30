@@ -10,13 +10,15 @@ namespace CUITAdmin
     class NewAccountPanel : Panel
     {
         private int controlGroupSizeY = 400;
-        private Button button1;
         private int controlGroupIndex = 0;
+        NewAccountForm containingForm;
 
-        public NewAccountPanel(Form pForm)
+        public NewAccountPanel(NewAccountForm pForm, int index)
         {
-            pForm.Controls.Add(this);
-            this.Location = new Point(10, 10 + controlGroupIndex * controlGroupSizeY);
+            containingForm = pForm;
+
+            containingForm.Controls.Add(this);
+            this.Location = new Point(10, 10 + index * controlGroupSizeY);
             this.Size = new Size(650, 400);
 
             Label lblAccountName = new Label();
@@ -92,6 +94,22 @@ namespace CUITAdmin
             RichTextBox txtNotes = new RichTextBox();
             txtNotes.SetBounds(325, 40, 280, 172);
             this.Controls.Add(txtNotes);
+
+            Button btnAddNewPanel = new Button();
+            btnAddNewPanel.Text = "New Form";
+            btnAddNewPanel.Location = new Point(435, 220);
+            this.Controls.Add(btnAddNewPanel);
+
+            Button btnSubmit = new Button();
+            btnSubmit.Text = "Submit";
+            btnSubmit.Location = new Point(525, 220);
+            this.Controls.Add(btnSubmit);
+        }
+
+        private void btnAddNewPanel_Click(object sender, EventArgs e)
+        {
+            controlGroupIndex++;
+            containingForm.AddNew(controlGroupIndex);
         }
     }
 }

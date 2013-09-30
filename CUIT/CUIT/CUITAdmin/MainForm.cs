@@ -55,6 +55,17 @@ namespace CUITAdmin
             newAccount.Show();
         }
 
+        private void tbpExports_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog logDialog = new OpenFileDialog();
+            logDialog.ShowDialog();
+        }
+
         /*
         private void TypeSwitch(){
             switch (cboType.SelectedItem.ToString())

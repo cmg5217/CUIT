@@ -9,3 +9,13 @@ E:\411\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.exe.config
 E:\411\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.exe
 E:\411\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.pdb
 E:\411\CUIT\CUIT\CUITClient\obj\x86\Debug\BarnsApp.pdb
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.exe.config
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.exe
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\bin\Debug\BarnsApp.pdb
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITClient.csprojResolveAssemblyReference.cache
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITAdmin.LoginScreen.resources
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITAdmin.Properties.Resources.resources
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITAdmin.SelectGrant.resources
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\obj\x86\Debug\CUITClient.csproj.GenerateResource.Cache
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\obj\x86\Debug\BarnsApp.exe
+C:\Users\lab-02\Desktop\411 Project\CUIT\CUIT\CUITClient\obj\x86\Debug\BarnsApp.pdb
